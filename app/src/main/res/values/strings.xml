@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Keyri Android Example Cognito</string>
+    <string name="cognito_example_title">Cognito Example</string>
+    <string name="cognito_login">Login with Cognito</string>
+    <string name="cognito_register">Register with Cognito</string>
+    <string name="confirmation_code">Enter confirmation code here</string>
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="given_name">Given name</string>
+    <string name="family">Family name</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+</resources>

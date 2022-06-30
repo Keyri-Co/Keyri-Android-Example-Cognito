@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_pool_id">us-east-1_OQutVrqBx</string>
+    <string name="client_id">576qcjfl9pso9st9cph23d4oci</string>
+    <string name="client_secret">mrds5kq9hj5mhi9f6vis4t3jn8ehahv7m2m86pocoa8flqrd7rb</string>
+</resources>
