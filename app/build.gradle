@@ -44,7 +44,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Keyri
-    implementation 'com.github.Keyri-Co:keyri-android-whitelabel-sdk:0.9.61'
+    implementation 'com.github.Keyri-Co.keyri-android-whitelabel-sdk:keyrisdk:1.0.14'
+    implementation 'com.github.Keyri-Co.keyri-android-whitelabel-sdk:scanner:1.0.14'
 
     // AWS Cognito
     implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.49.0'
