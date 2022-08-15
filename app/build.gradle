@@ -44,8 +44,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Keyri
-    implementation 'com.keyri:keyrisdk:1.1.0'
-    implementation 'com.keyri:scanner:1.1.0'
+    implementation 'com.keyri:keyrisdk:1.1.2'
+    implementation 'com.keyri:scanner:1.1.2'
 
     // AWS Cognito
     implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.49.0'
