@@ -7,7 +7,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.keyri.examplecognito.databinding.ActivityMainBinding
-import com.keyrico.scanner.AuthWithScannerActivity
+import com.keyrico.scanner.easyKeyriAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,13 +51,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun keyriAuth(publicUserId: String?, payload: String) {
-        val intent = Intent(this, AuthWithScannerActivity::class.java).apply {
-            putExtra(AuthWithScannerActivity.APP_KEY, "NJOFSuP652zthaoHaeDmImZ2CTh4NGqX")
-            putExtra(AuthWithScannerActivity.USERNAME, publicUserId)
-            putExtra(AuthWithScannerActivity.PAYLOAD, payload)
-        }
-
-        easyKeyriAuthLauncher.launch(intent)
+        easyKeyriAuth(
+            this,
+            easyKeyriAuthLauncher,
+            "NJOFSuP652zthaoHaeDmImZ2CTh4NGqX",
+            payload,
+            publicUserId
+        )
     }
 
     private fun startAuthActivity(clazz: Class<*>) {

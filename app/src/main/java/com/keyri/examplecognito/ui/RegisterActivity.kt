@@ -163,7 +163,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val associationKey = keyri.getAssociationKey(userSession.username)
         val timestampNonce = "${System.currentTimeMillis()}_${Random.nextInt()}"
-        val signature = keyri.getUserSignature(userSession.username, timestampNonce)
+        val signature = keyri.generateUserSignature(userSession.username, timestampNonce)
 
         val payload = JSONObject().apply {
             put("username", userSession.username)

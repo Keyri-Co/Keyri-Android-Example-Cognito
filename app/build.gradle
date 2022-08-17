@@ -39,13 +39,14 @@ android {
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Keyri
-    implementation 'com.keyri:keyrisdk:1.1.2'
-    implementation 'com.keyri:scanner:1.1.2'
+    implementation 'com.keyri:keyri-bom:1.2.0'
+    implementation 'com.keyri:keyrisdk'
+    implementation 'com.keyri:scanner'
 
     // AWS Cognito
     implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.49.0'
