@@ -166,7 +166,9 @@ class RegisterActivity : AppCompatActivity() {
         val signature = keyri.generateUserSignature(userSession.username, timestampNonce)
 
         val payload = JSONObject().apply {
-            put("username", userSession.username)
+            put("idToken", userSession.idToken)
+            put("refreshToken", userSession.refreshToken)
+            put("accessToken", userSession.accessToken)
             put("timestamp_nonce", timestampNonce)
             put("userSignature", signature)
             put("associationKey", associationKey)

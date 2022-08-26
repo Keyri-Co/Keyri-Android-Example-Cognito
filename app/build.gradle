@@ -44,7 +44,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Keyri
-    implementation 'com.keyri:keyri-bom:1.2.0'
+    implementation 'com.keyri:keyri-bom:1.3.0'
     implementation 'com.keyri:keyrisdk'
     implementation 'com.keyri:scanner'
 
