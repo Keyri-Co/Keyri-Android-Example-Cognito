@@ -91,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun createPayloadAndSendResult(userSession: CognitoUserSession) {
-        val keyri = Keyri()
+        val keyri = Keyri(this)
 
         val associationKey = keyri.getAssociationKey(userSession.username)
         val timestampNonce = "${System.currentTimeMillis()}_${Random.nextInt()}"
