@@ -20,6 +20,7 @@ import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.Authentic
 import com.amazonaws.regions.Regions
 import com.keyri.examplecognito.R
 import com.keyri.examplecognito.databinding.ActivityLoginBinding
+import com.keyri.examplecognito.ui.MainActivity.Companion.APP_KEY
 import com.keyri.examplecognito.ui.MainActivity.Companion.KEY_EMAIL
 import com.keyri.examplecognito.ui.MainActivity.Companion.KEY_PAYLOAD
 import com.keyrico.keyrisdk.Keyri
@@ -91,7 +92,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun createPayloadAndSendResult(userSession: CognitoUserSession) {
-        val keyri = Keyri(this)
+        val keyri = Keyri(this, APP_KEY)
 
         val associationKey = keyri.getAssociationKey(userSession.username)
         val timestampNonce = "${System.currentTimeMillis()}_${Random.nextInt()}"

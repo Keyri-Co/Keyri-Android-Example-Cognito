@@ -26,6 +26,7 @@ import com.amazonaws.regions.Regions
 import com.amazonaws.services.cognitoidentityprovider.model.SignUpResult
 import com.keyri.examplecognito.R
 import com.keyri.examplecognito.databinding.ActivityRegisterBinding
+import com.keyri.examplecognito.ui.MainActivity.Companion.APP_KEY
 import com.keyrico.keyrisdk.Keyri
 import org.json.JSONObject
 import kotlin.random.Random
@@ -159,7 +160,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun createPayloadAndSendResult(userSession: CognitoUserSession) {
-        val keyri = Keyri(this)
+        val keyri = Keyri(this, APP_KEY)
 
         val associationKey = keyri.getAssociationKey(userSession.username)
         val timestampNonce = "${System.currentTimeMillis()}_${Random.nextInt()}"
